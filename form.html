@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoofari</title>
+    <link href="css/form.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title-text">
+        <div class="title login">Login Form</div>
+        <div class="title signup">SignUp Form</div>
+    </div>
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="login.php" class="login" method="POST">
+                <div class="field">
+                    <input type="email" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">
+                    Not a member? <a href="">Signup now</a>
+                    <p class="in">Return to <a href="index.html" >home page</a></p>
+                </div>
+            </form>
+            <form action="register.php" class="signup" id="signupForm" method="POST">
+                <div class="field">
+                    <input type="email" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Confirm password" id="confirmPassword" required>
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
